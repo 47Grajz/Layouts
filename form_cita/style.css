@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.content
+{
+  margin: 20px;
+    width: 80%;
+    border: 1px solid  #333  ;
+    border-radius:10px ;
+    overflow: hidden;
+}
+
+.container
+{
+    display: flex;
+    width: 100%;
+}
+
+
+.cont-left,.cont-right
+{
+    padding: 20px;
+}
+
+
+.cont-left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #96005A;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.cont-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+    width: 60%;
+    margin-top: 40px;
+}
+
+.form-cont
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-right h4{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
+.form-group
+{
+    width: 100%;
+    display: flex;
+
+}
+
+.select-group
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    padding: 20px;
+}
+
+.selects
+{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+p{
+    font-size: 25px;
+    color: #96005A;
+}
+
+
+
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 400px;
+  }
+  
+  .input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #96005A;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  
+
+
+  .cyberpunk-checkbox {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #96005A;
+  border-radius: 20px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: #96005A;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.cyberpunk-checkbox-label {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  font-weight:lighter;
+}
+
+
+
+.button
+{
+    margin: 80px;
+}
+
+
+button
+{
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #96005A;
+    color: #96005A;
+}
+
+button:hover
+{
+    background-color: #96005A;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 2125px) {
+ 
+  .input-container input[type="text"] {
+
+    width: 80%;
+
+  
+}
+
+.input-container .underline
+{
+  width: 80%;
+}
+
+.tittle
+{
+  font-size: 30px;
+}
+
+}
+
+
+@media only screen and (max-width: 1273px) {
+ 
+.container
+{
+  flex-direction: column-reverse;
+}
+
+.form-group
+{
+  flex-direction: column;
+}
+
+.cont-right
+{
+  width: 100%;
+  padding: 5px;
+}
+
+.cont-left{
+  width: 100%;
+}
+
+.input-container .underline
+{
+  width: 100%;
+}
+
+.input-container input[type="text"] {
+
+  width: 100%;
+}
+
+.cont-right h4{
+  font-size: 30px;
+
+}
+
+.select-group p 
+{
+  margin-right: 10px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 614px) {
+ 
+  .form-group
+  {
+    padding: 20px;
+  }
+
+  .content
+  {
+    border: none;
+  }
+
+  .container
+  {
+    align-items: center;
+  }
+
+  .cont-right
+  {
+    width: 120%;
+  }
+
+
+
+}
