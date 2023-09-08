@@ -17,13 +17,14 @@
 body
 {
     background-color: #D9D9D9;
-    display: flex;
 }
 
 .cont
 {
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     padding: 20px;
 }
 
@@ -38,7 +39,6 @@ body
 .cont-left
 {
     width: 57%;
-    height: 100%;
     background-color: var(--primarycolor);
     border-radius: 20px;
     padding: 40px 20px 20px 20px;
@@ -143,8 +143,109 @@ a{
 
 .cont-info-bottom
 {
+  display: flex;
+  justify-content: space-between;
     width: 100%;
-    background-color: rebeccapurple;
+  height: 100%;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+}
+
+
+.info-bottom
+{
+  width: 22%;
+
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  transition: all .6s ease;
+}
+
+.info-bottom:hover
+{
+  transform: scale(1.05);
+
+}
+
+.info-bottom
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-bottom h5
+{
+  font-size: 23px;
+}
+
+.b1-main
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.b1-main .b1-number{
+color: var(--primarycolor);
+  margin-top: 10px;
+  font-size: 100px;
+}
+
+
+
+.daily-citas
+{
+  margin-top: 30px;
+  width: 70%;
+}
+
+.cita
+{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#D9D9D9;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom:10px ;
+  transition: all .6s ease;
+
+}
+
+.cita:hover
+{
+  transform: scale(1.05);
+}
+
+.cita .hora
+{
+  color: rgb(0, 0, 0,0.2);
+}
+
+.cita-info p{
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.cita-info h3{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+.b2 .tratamientos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.b3 h3{
+  font-size: 40px;
+  color: var(--primarycolor);
 }
 
 /* estilos boton */
@@ -228,7 +329,7 @@ a{
     border: 3px solid #ffffff4d;
     outline: none;
     overflow: hidden;
-    font-size: 15px;
+    
   }
   
   .icon {
