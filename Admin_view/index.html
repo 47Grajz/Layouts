@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="chart">
-
+                  <canvas id="myChart"></canvas>
                 </div>
 
             </div>
@@ -53,9 +53,9 @@
                           </button></a>
                     </div>
                     <div class="info-box bx2">
-                        <p>Citas Pendientes</p>
-                        <p class="Number">24</p>
-                        <p class="label">Pendientes para aprobar</p>
+                        <p>Citas Programadas</p>
+                        <p class="Number">10</p>
+                        <p class="label">Ya Programadas</p>
                         <a href="#"><button class="button">
                             Mas
                             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
@@ -145,7 +145,20 @@
               </svg>
             </button></a>
           </div>
-          <div class="info-bottom b4">4</div>
+          <div class="info-bottom b4">
+                        <h5>Balance economico</h5>
+            <h3>2000000</h3>
+            <p>Este mes</p>
+            <h3>30000000</h3>
+            <p>Mes pasado</p>
+
+            <a href="#"><button class="button">
+              Mas
+              <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+              </svg>
+            </button></a>
+          </div>
       </div>
 
 
@@ -153,7 +166,7 @@
       </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
     <script src="chart.js"></script>
 </body>
 </html>
