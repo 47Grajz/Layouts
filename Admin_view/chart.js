@@ -26,7 +26,7 @@ var options = {
 
         },
         ticks: {
-          color: '#D9D9D9', 
+          color: '#D9D9D9',
         }
       },
       y: {
