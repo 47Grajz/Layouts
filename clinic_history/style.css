@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@300&display=swap');
+
+
+
+:root{
+  --primaryColor: rgb(164, 3, 100,0.8);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+
+/* 
+estilos primeros inputs */
+
+.container
+{
+  width: 70%;
+  display: flex;  
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.firs-info_div
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+
+}
+/* 
+estilos radio button */
+
+.radio-buttons_div
+{
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--primaryColor);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.buttons_right
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+
+.button-radio
+{
+  display: flex;
+  align-items: center;
+
+}
+
+.button-radio p
+{
+  width: 60%;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.radios{
+  display: flex;
+  justify-content:space-between;
+  align-items: end;
+  width: 20%;
+  text-align: start;
+}
+
+.radios p
+{
+  width: 30px;
+  text-align: center;
+}
+
+.selects
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+/* 
+estilos seccion antecedentes y observaciones */
+
+
+.section
+{
+  margin-top: 40px;
+  background-color: #FFFFFF;
+}
+
+.section p
+{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.area-section
+{
+  width: 100%;
+  height: 150px;
+  border: 1px solid #96005A;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+  resize: none;
+}
+
+
+.area-info
+{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  border: 1px solid #96005A;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.section-info p span
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.section-info
+{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.section-info_2
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 30px;
+}
+
+
+
+.input_2 label
+{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.input-2_item
+{
+  width: 160px;
+  border-bottom:1px solid #96005A;
+  margin-left: 10px;
+}
+
+
+
+
+
+.input {
+    width: 400px;
+    height: 44px;
+    padding: 0 1rem;
+    border-bottom: 1px  solid var(--primaryColor);
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+
+
+
+  .cyberpunk-checkbox {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #96005A;
+    border-radius: 20px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #96005A;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  
+  
+  .cyberpunk-checkbox-label {
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    font-weight:lighter;
+  }

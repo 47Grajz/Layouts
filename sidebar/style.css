@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear ;
+    border-right: 0.5px solid rgb(0, 0, 0,0.1);
+}
+
+
+.logo
+{
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    transition: all 0.5 ease;
+    margin: 10px 0 0 10px;
+}
+
+
+.upper-tittle
+{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+}
+
+@font-face {
+    font-family: "Mistrully";
+    src: url('assets/Mistrully.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.logo span {
+    font-family: "Mistrully", sans-serif;
+    padding: 15px;
+}
+
+.item, a
+{
+    position: relative;
+    color: black;
+    font-size: 17px;
+    display: table;
+    font-weight: bold;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas
+{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item
+{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.item:hover
+{
+    background:rgb(164, 3, 100,0.8);
+    color: #fff;
+    transition: .15s ease;
+    transform: scale(1.05);
+}
+nav:hover{
+    width: 260px;
+    transition: all 0.5s ease;
+}
+
+.logout
+{
+    position: absolute;
+    bottom: 0;
+    border-top: 0.5px solid rgb(0, 0, 0,0.1);
+}
